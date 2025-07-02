@@ -1,0 +1,30 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #121212;
+color: #ffffff;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+
+/* Responsive grid helpers */
+.container {
+margin: auto;
+}
+
+/* Add basic media query */
+@media (max-width: 768px) {
+.movie-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 480px) {
+.movie-grid {
+grid-template-columns: 1fr;
+}
+}
+
+/* Add more styles in individual component files */
